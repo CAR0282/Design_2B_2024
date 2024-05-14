@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #050DC6, #d3dcfb);
+            margin: 0;
+            padding: 0;
+            font-family: 'Pacifico', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .animated-text {
+            font-size: 50px;
+            color: #FF0000;
+            text-align: center;
+            animation: move-around 1s infinite alternate;
+        }
+        @keyframes move-around {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, 50px);
+            }
+            50% {
+                transform: translate(100px, -50px);
+            }
+            75% {
+                transform: translate(-50px, 100px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">
+        AGHHHHHH MY HAIR IS GETTING WET!
+    </div>
+</body>
+</html>

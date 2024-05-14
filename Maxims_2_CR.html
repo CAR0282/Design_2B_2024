@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Text</title>
+    <style>
+        body {
+            background-color: #d3dcfb;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .animated-text {
+            font-size: 50px;
+            color: #8b7af9;
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+        }
+        .animated-text .jacket {
+            display: inline-block;
+            transition: font-size 1s ease-in-out;
+        }
+        .animated-text:hover .jacket {
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-text">
+        I think I may need to wear my <span class="jacket">jacket</span>.
+    </div>
+</body>
+</html>
